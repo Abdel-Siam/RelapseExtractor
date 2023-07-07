@@ -1,0 +1,117 @@
+
+html, body{
+    background-color: #1C6E8C;
+    max-width: 100vw;
+    padding: 5px;
+}
+h1,h2,h3,h4, h5,p,ul{
+    color:#FBFCFF;
+}
+
+h5{
+    margin-bottom: 15px;
+    margin-top: 5px;
+}
+button{
+    border-radius: 25px;
+}
+.container{
+    max-width: 100vw;
+}
+.contentRow{
+    width: 100%;
+    margin: auto;
+}
+.ButtonsCol{
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+.sidebar{
+    background-color: #274156;
+    border-radius: 25px;
+    margin-left: 10px;
+    padding: 15px;
+    height: 90vh;
+}
+.chat-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    border-radius: 25px;
+    overflow: auto;
+    background-color: #274156;
+    height: 75vh;
+    padding: 10px;
+}
+.chatgroup{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 10px;
+}
+.user-bubble {
+    background-color: #0084FF;
+    color: #FFFFFF;
+    padding: 8px;
+    border-radius: 10px;
+    margin-bottom: 8px;
+    align-self: flex-end;
+    width:  fit-content;
+}
+
+.bot-bubble {
+    background-color: #F0F0F0;
+    color: #000000;
+    padding: 8px;
+    border-radius: 10px;
+    margin-bottom: 8px;
+    align-self: flex-start;
+    width: fit-content;
+}
+.NotesDiv{
+    width: 100%;
+    height: 45vh;
+    background-color: #274156;
+    border-radius: 25px;
+    overflow: auto;
+}
+.viewDiv{
+    width: 100%;
+    height: 45vh;
+    background-color: #274156;
+    border-radius: 25px;
+    padding: 10px;
+    overflow: auto;
+    color: #FFFFFF;
+}
+.Model1, .Model2, .CombinedOutput {
+    width: 100%;
+    height: 100%;
+    background-color: #274156;
+    border-radius: 25px;
+    padding: 10px;
+}
+.CompleteOuput{
+    width: 100%;
+    height: 100%;
+    background-color: #274156;
+    border-radius: 25px;
+}
+.notes{
+    padding:10px;
+    background-color: #3a5f7e;
+    border-radius: 25px;
+    margin: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.Outputs{
+    padding:10px;
+    background-color: #3a5f7e;
+    border-radius: 25px;
+    margin: 10px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
