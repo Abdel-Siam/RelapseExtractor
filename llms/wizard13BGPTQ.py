@@ -6,9 +6,9 @@ from langchain.llms import HuggingFacePipeline
 
 class wizard13bGPTQ(LLM):
     
-    name = "wizardLM-13B-1.0-GPTQ"
-    model_name_or_path = "TheBloke/wizardLM-13B-1.0-GPTQ"
-    model_basename = "WizardLM-13B-1.0-GPTQ-4bit-128g.no-act-order"
+    name = "wizardLM-13B-1.1-GPTQ"
+    model_name_or_path = "TheBloke/WizardLM-13B-V1.1-GPTQ"
+    model_basename = "wizardlm-13b-v1.1-GPTQ-4bit-128g.no-act.order"
     # global model tokenizaer
     model = None
     tokenizer = None
