@@ -4,11 +4,11 @@ from transformers import AutoTokenizer,pipeline, logging
 from auto_gptq import AutoGPTQForCausalLM
 from langchain.llms import HuggingFacePipeline
 
-class WizardHot(LLM):
+class Wizard13BHot(LLM):
     
-    name = "WizardLM-13B-V1-0-Uncensored-SuperHOT-8K-GPTQ"
-    model_name_or_path = "TheBloke/WizardLM-13B-V1-0-Uncensored-SuperHOT-8K-GPTQ"
-    model_basename = "wizardlm-13b-v1.0-uncensored-superhot-8k-GPTQ-4bit-128g.no-act.order"
+    name = "WizardLM-13B-V1-1-SuperHOT-8K-GPTQ"
+    model_name_or_path = "TheBloke/WizardLM-13B-V1-1-SuperHOT-8K-GPTQ"
+    model_basename = "wizardlm-13b-v1.1-superhot-8k-GPTQ-4bit-128g.no-act.order"
     # global model tokenizaer
     model = None
     tokenizer = None
