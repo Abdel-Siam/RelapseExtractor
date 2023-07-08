@@ -1,22 +1,7 @@
 from langchain.prompts import PromptTemplate
 from langchain.output_parsers import PydanticOutputParser
 from pydantic import BaseModel, Field, validator
-#prompt_template = "You are a doctor who is attempting to extract information from the given clinical note.{instruction} USER:  ASSISTANT:"
 
-from llms.wizard13BGPTQ import wizard13bGPTQ
-from llms.vicuna13 import Vicuna
-from llms.wizardHot import WizardHot
-from llms.wizardvicunaHotReg import WizardVicunaHotReg
-from llms.openinstruct import OpenInstruct
-# pipe = pipeline(
-#     "text-generation",
-#     model=model,
-#     tokenizer=tokenizer,
-#     max_new_tokens=1024,
-#     temperature=0.4,
-#     top_p=0.95,
-#     repetition_penalty=1.15
-# )
 # Define your desired data structure.
 class Relapse(BaseModel):
     RelapseDiagnosis: str = Field(description="Describes the Relapse Diagnosis for the patient which can be myelitis, Optical Neuritis (ON), brainstem or none")
