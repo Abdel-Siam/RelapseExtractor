@@ -12,7 +12,7 @@ from llms.wizard13BGPTQ import wizard13bGPTQ
 from llms.wizardvicuna13 import WizardVicuna
 from llms.wizardMega import WizardMega
 from llms.vicuna13 import Vicuna
-from llms.wizardHot import WizardHot
+from llms.wizardHot import Wizard13BHot
 from llms.noushermes import NousHermes
 from llms.wizardvicunaHot13 import WizardVicunaHot
 from llms.chronosHot import ChronosHot
@@ -29,12 +29,12 @@ from llms.wizard30B import wizard30bGPTQ
 
 class_dict = {'Wizard13B': wizard13bGPTQ(),
               'Wizard30B': wizard30bGPTQ(),
+              'WizardHot': Wizard13BHot(),
               'KoalaHot13B':Koala(),
               'OrcaMiniv2':OrcaMini(),
               'WizardVicuna13': WizardVicuna(),
               'WizardMega': WizardMega(),
               'Vicuna13': Vicuna(),
-              'WizardHot': WizardHot(),
               'CAMEL13BHot': CAMEL13BHot(),
               'NousHermes': NousHermes(),
               'WizardVicunaHot13': WizardVicunaHot(),
