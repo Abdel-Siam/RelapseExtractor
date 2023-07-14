@@ -2,7 +2,6 @@ from langchain.prompts import PromptTemplate
 from langchain.output_parsers import PydanticOutputParser
 from pydantic import BaseModel, Field, validator
 
-# Define your desired data structure.
 class Relapse(BaseModel):
     RelapseDiagnosis: str = Field(description="Describes the Relapse Diagnosis for the patient which can be myelitis, Optical Neuritis (ON), brainstem or none")
     RelapseDate: str = Field(description="Describes what year the patient first diagnosised with the Relapse in multiple schlerosis or none")
@@ -32,7 +31,7 @@ def outparser(note, question, llm,):
     # And a query intended to prompt a language model to populate the data structure.
     #print(prompt)
     _input = prompt.format_prompt(query=question)
-    #print(_input)
+    print(_input)
     output = llm.generateText(_input.to_string())
     
     #output = re.sub(r"0", "00", output[0]['generated_text'].split('ASSISTANT:')[1])
